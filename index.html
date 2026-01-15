@@ -29,6 +29,55 @@
         .icon-sm {
             font-size: 20px;
         }
+        /* Form Styling */
+        #contact-us {
+            background-color: #f8f9fa;
+            padding: 50px 50px;
+            border-radius: 10px;
+            margin: 40px auto;
+            max-width: 700px;
+        }
+        #contact-us h6 {
+            font-weight: 600;
+            margin-bottom: 40px;
+            color: #333;
+        }
+        .form-control {
+            border: 1px solid #ddd;
+            padding: 12px 15px;
+            border-radius: 5px;
+            font-size: 14px;
+            color: #666;
+        }
+        .form-control::placeholder {
+            color: #999;
+        }
+        .form-control:focus {
+            border-color: #bbb;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.1);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-label {
+            display: none;
+        }
+        #contact-us .btn {
+            background-color: #666;
+            border: 1px solid #666;
+            color: white;
+            padding: 10px 30px;
+            font-weight: 500;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: block;
+            margin: 30px auto 0;
+        }
+        #contact-us .btn:hover {
+            background-color: #555;
+            border-color: #555;
+        }
     </style>
 </head>
 <body>
@@ -174,21 +223,21 @@
             </div>
         </section>
         <section id="contact-us" class="container my-4">
-            <h6 class="display-5 text-center">Contact Us</h6>
+            <h6 class="display-5 text-center">You can also Reach Us</h6>
             <form>
-                <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="name" placeholder="Enter Your Name">
                 </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                <div class="form-group">
+                    <input type="email" class="form-control" id="email" placeholder="Enter Your Email">
                 </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="subject" placeholder="Enter the subject">
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <div class="form-group">
+                    <textarea class="form-control" id="message" rows="5" placeholder="Enter Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
             </form>
         </section>
     </main>
